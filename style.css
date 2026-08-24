@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding-top: 60px;
+}
+
+
+/* Main Container */
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* Title */
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* Add Task Box */
+
+.add-box {
+    display: flex;
+    gap: 10px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Input */
+
+#taskInput {
+    height: 45px;
+    flex: 1;
+}
+
+
+/* Add Button */
+
+#addTaskBtn {
+    white-space: nowrap;
+    height: 45px;
+}
+
+
+/* Tasks Title */
+
+.tasks-title {
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* Task Counter */
+
+#taskCount {
+    background-color: #0d6efd;
+    color: white;
+
+    font-size: 14px;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    margin-left: 5px;
+}
+
+
+/* Task Item */
+
+.task-item {
+    background-color: white;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-left: 4px solid #0d6efd;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Task Text */
+
+.task-text {
+    font-size: 16px;
+
+    color: #333;
+
+    word-break: break-word;
+
+    padding-right: 15px;
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+    border: none;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    padding: 7px 13px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #bb2d3b;
+}
+
+
+/* Empty Message */
+
+.empty-message {
+    background-color: white;
+
+    text-align: center;
+
+    color: #888;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    border: 1px dashed #ccc;
+}
+
+
+/* Responsive */
+
+@media (max-width: 576px) {
+
+    body {
+        padding-top: 30px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .add-box {
+        flex-direction: column;
+    }
+
+    #addTaskBtn {
+        width: 100%;
+    }
+
+    .task-item {
+        align-items: center;
+    }
+}
